@@ -1,4 +1,5 @@
 # REAL ESTATE SALES PREDICTION MODEL
+![intro](images/intro.png)
 
 ## Project Overview
 
@@ -65,7 +66,7 @@ Correlation matrix
 Distribution Analysis
 Inferential Statistics using Hypothesis Testing and Analysis of Variance
 MultiColinierity
-# *Modelling**
+# **Modelling**
 1. Baseline model - simple linear model.
 2. log transformation. 
 3. Multiple Linear Regression
@@ -80,7 +81,7 @@ Root Mean Squared Error (RMSE) (262383.50): This is the square root of the MSE, 
 Intercept (540631.16): Estimated house price when all independent variables are zero. It's around 540,631.16 units, suggesting a baseline value.
 Coefficient (259767.82): Represents the change in house prices for a one-unit increase in square footage of living space, with other variables held constant. For every one-unit increase in square footage, house prices are expected to increase by approximately 259,767.82 units.
 
-# ** Multiple Linear Regresion 
+# **Multiple Linear Regresion**
 ![Multiple-Linear-Regression](images/Multiple-Linear-Regression.png)
 
 # **RESIDUALS**
@@ -151,7 +152,7 @@ Overall the model was the best fit model for this predictions
 
 6.Differentiate Marketing Strategies: Tailor marketing strategies based on property condition and grade ratings. Highlight the benefits of higher-grade properties to attract premium buyers, while emphasizing renovation potential for properties with lower condition ratings.
 
-# ** Conclusion**
+# **Conclusion**
 
 1. Property Size Matters: There is a clear positive correlation between the size of a property, indicated by total square footage, and its price. Investing in larger properties can potentially yield higher returns for investors and increase market value for homeowners.
 
