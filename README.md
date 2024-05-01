@@ -135,10 +135,18 @@ Correlation matrix
 Distribution Analysis
 Inferential Statistics using Hypothesis Testing and Analysis of Variance
 MultiColinierity
+
+
 # *Modelling**
 Baseline model - simple linear model.
+
+
+
 2. log transformation. 
+
+
 3. Multiple Linear Regression
+
 4. Residual modelling.
 
 # **REGRESSION RESULTS**
@@ -210,7 +218,7 @@ Independence of errors: The errors (residuals) from the regression model should 
 Normality of errors: The errors are normally distributed. This implies that the residuals should follow a normal distribution with a mean of zero.
 
 No perfect multicollinearity: There should be no perfect linear relationship between the independent variables. In other words, no independent variable should be a perfect linear combination of other independent variables.
-#**Limitations**
+# **Limitations**
 Despite its effectiveness in predicting property prices, the model has several limitations that need to be addressed:
 
 Limited Property Characteristics: The dataset may lack comprehensive property-based characteristics, potentially limiting the model's ability to capture the full range of factors influencing housing prices.
