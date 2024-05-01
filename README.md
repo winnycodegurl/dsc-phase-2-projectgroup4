@@ -1,285 +1,261 @@
-# Phase 2 Project Description
-
-Another module down - you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-v2-3/main/halfway-there.gif)
-
-All that remains in Phase 2 is to put your newfound data science skills to use with a large project!
-
-In this project description, we will cover:
-
-* Project Overview: the project goal, audience, and dataset
-* Deliverables: the specific items you are required to produce for this project
-* Grading: how your project will be scored
-* Getting Started: guidance for how to begin working
+# REAL ESTATE SALES PREDICTION MODEL
 
 ## Project Overview
 
-For this project, you will use multiple linear regression modeling to analyze house sales in a northwestern county.
+In the fast-paced world of real estate, it's crucial for agencies to provide clients with precise information. Clients, whether they're looking to become homeowners or investors, rely on real estate companies for guidance on important decisions such as pricing, market trends, and property evaluations. To meet this need, real estate agencies can benefit from a sophisticated regression-based tool. This tool uses various property variables like the number of bedrooms, year built, floor count, living area, condition, location, and amenities to accurately predict property prices. By employing regression analysis, agencies can offer clients more precise pricing estimates, leading to better-informed decisions. Ultimately, this tool aims to improve client satisfaction, streamline decision-making processes, and drive success for real estate agencies.
+
 
 ### Business Problem
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+Real estate experts in King County need help understanding what factors influence property values and market trends. This study aims to analyze property features, locations, buyer preferences, and market changes over time. By gaining insights from this analysis, real estate professionals can make informed decisions about buying, selling, and positioning themselves in the dynamic King County market. The goal is to provide practical advice to help them succeed in this ever-changing real estate landscape.
+### The Data Understanding
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+King County, Washington, situated in the northwest of the United States, is known for its vibrant housing market centered around Seattle. The county has experienced significant growth due to its strong economy and cultural importance, attracting a large number of residents and creating high demand for housing in both urban and suburban areas. Seattle, with its impressive skyline, is especially sought after by tech professionals and city lovers. King County's real estate market is competitive, offering a range of neighborhoods to suit different preferences, from historic areas to modern suburban developments
+**Target Variable**
 
-### The Data
+price: Sale price of the house .
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this assignment's GitHub repository. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+**Unique identifier**
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you **ignore** some or all of the following features:
+id - Unique identifier for a house
 
-* `date`
-* `view`
-* `sqft_above`
-* `sqft_basement`
-* `yr_renovated`
-* `zipcode`
-* `lat`
-* `long`
-* `sqft_living15`
-* `sqft_lot15`
+**Property Characteristics:**
 
+
+
+bathrooms: Number of bathrooms.
+
+sqft_living: Square footage of living space in the home.
+
+sqft_lot: Square footage of the lot.
+
+floors: Number of floors (levels) in the house.
+
+waterfront: Indicates whether the house is on a waterfront (categorical: YES/NO).
+
+view: Quality of view from the house, categorized into various types.
+
+condition: Overall condition of the house, categorized based on maintenance.
+
+grade: Overall grade of the house, reflecting construction and design quality.
+
+Additional Features:
+sqft_above: Square footage of house apart from the basement.
+
+sqft_basement: Square footage of the basement.
+
+yr_built: Year when the house was built.
+
+yr_renovated: Year when the house was renovated.
+
+zipcode: ZIP Code of the property.
+
+lat: Latitude coordinate of the property.
+
+long: Longitude coordinate of the property.
+
+sqft_living15: Square footage of interior housing living space for the nearest 15 neighbors.
+
+sqft_lot15: Square footage of the land lots of the nearest 15 neighbors.bedrooms: Number of bedrooms.
+
+bathrooms: Number of bathrooms.
+
+sqft_living: Square footage of living space in the home.
+
+sqft_lot: Square footage of the lot.
+
+floors: Number of floors (levels) in the house.
+
+waterfront: Indicates whether the house is on a waterfront (categorical: YES/NO).
+
+view: Quality of view from the house, categorized into various types.
+
+condition: Overall condition of the house, categorized based on maintenance.
+
+grade: Overall grade of the house, reflecting construction and design quality.
+
+**Additional Features:**
+
+sqft_above: Square footage of house apart from the basement.
+
+sqft_basement: Square footage of the basement.
+
+yr_built: Year when the house was built.
+
+yr_renovated: Year when the house was renovated.
+
+zipcode: ZIP Code of the property.
+
+lat: Latitude coordinate of the property.
+
+long: Longitude coordinate of the property.
+
+sqft_living15: Square footage of interior housing living space for the nearest 15 neighbors.
+
+sqft_lot15: Square footage of the land lots of the nearest 15 neighbors.
 ### Key Points
 
-* **Your goal in regression modeling is to yield findings to support relevant recommendations. Those findings should include a metric describing overall model performance as well as at least two regression model coefficients.** As you explore the data and refine your stakeholder and business problem definitions, make sure you are also thinking about how a linear regression model adds value to your analysis. "The assignment was to use linear regression" is not an acceptable answer! You can also use additional statistical techniques other than linear regression, so long as you clearly explain why you are using each technique.
+# **OBJECTIVES**
 
-* **You should demonstrate an iterative approach to modeling.** This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
 
-* **Data visualization and analysis are no longer explicit project requirements, but they are still very important.** In Phase 1, your project stopped earlier in the CRISP-DM process. Now you are going a step further, to modeling. Data visualization and analysis will help you build better models and tell a better story to your stakeholders.
+**Main Objective:**
 
-## Deliverables
+The primary aim of this project is to develop a predictive regression model to support real estate agencies in advising clients on house prices. This model is intended to anticipate potential changes in property value based on property characteristics, furnishing clients with valuable insights to facilitate informed investment decisions.
 
-There are three deliverables for this project:
+Specific Goals:
 
-* A **non-technical presentation**
-* A **Jupyter Notebook**
-* A **GitHub repository**
+i). Identification of Key Influencing Factors on House Prices:
 
-The deliverables requirements are almost the same as in the Phase 1 Project, and you can review those extended descriptions [here](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables). In general, everything is the same except the "Data Visualization" and "Data Analysis" requirements have been replaced by "Modeling" and "Regression Results" requirements.
+Analyze various property features, including bedrooms, bathrooms, and square footage, to determine their impact on sale price. Investigate location-related attributes such as zip codes and geographic coordinates to further comprehend their effect on property prices.
 
-### Non-Technical Presentation
+ii). Assessment of Model Performance:
 
-Recall that the non-technical presentation is a slide deck presenting your analysis to ***business stakeholders***, and should be presented live as well as submitted in PDF form on Canvas.
+Employ metrics such as mean squared error, R-squared values, and residual analysis to evaluate the model's accuracy in predicting house prices effectively.
 
-We recommend that you follow this structure, although the slide titles should be specific to your project:
+iii). Provision of Actionable Recommendations:
 
-1. Beginning
-    - Overview
-    - Business and Data Understanding
-2. Middle
-    - **Modeling**
-    - **Regression Results**
-3. End
-    - Recommendations
-    - Next Steps
-    - Thank you
+Offer practical recommendations to real estate agencies aimed at enhancing profitability and market presence. Utilize insights gleaned from the model to optimize marketing strategies and enhance overall decision-making processes.
 
-Make sure that your discussion of modeling and regression results is geared towards a non-technical audience! Assume that their prior knowledge of regression modeling is minimal. You don't need to explain how linear regression works, but you should explain why linear regression is useful for the problem context. Make sure you translate any metrics or coefficients into their plain language implications.
+# **TABLE OF CONTENT**
+1.   Data Preparation
+2.   Data cleaning
+1.   Exploratory data analysis
+2.   Statistical Analysis
+1.   Modelling
+2.   Regression Results
+1.   Conclusion
+2.   Recomendations
 
-The graded elements for the non-technical presentation are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables).
 
-### Jupyter Notebook
+#**Statistical Analysis**
+Statistical analysis plays a crucial role in understanding relationships within datasets, identifying patterns, and gaining insights. In this regression modeling project aimed at predicting property values, several key steps in statistical analysis are essential:
 
-Recall that the Jupyter Notebook is a notebook that uses Python and Markdown to present your analysis to a ***data science audience***. You will submit the notebook in PDF format on Canvas as well as in `.ipynb` format in your GitHub repository.
+Descriptive Statistics
+Correlation matrix
+Distribution Analysis
+Inferential Statistics using Hypothesis Testing and Analysis of Variance
+MultiColinierity
+# *Modelling**
+Baseline model - simple linear model.
+2. log transformation. 
+3. Multiple Linear Regression
+4. Residual modelling.
 
-The graded elements for the Jupyter Notebook are:
+# **REGRESSION RESULTS**
 
-* Business Understanding
-* Data Understanding
-* Data Preparation
-* **Modeling**
-* **Regression Results**
-* Code Quality
+**SIMPLE LINEAR REGRESSION** 
+Intercept: This is like the starting point or baseline of our predictions. For example, if all other factors were zero, we'd expect the value to be around -44593.95. It's where our line would intersect the y-axis on a graph.
 
-### GitHub Repository
+Coefficient: This tells us how much the predicted value changes for each unit increase in the independent variable. In this case, for every one-unit increase in the independent variable, we'd expect the dependent variable to increase by about 281.41.
 
-Recall that the GitHub repository is the cloud-hosted directory containing all of your project files as well as their version history.
+R-squared: This is a measure of how well our model explains the variation in the data. An R-squared value of 0.49 means that about 49% of the variability in the dependent variable is explained by our model. So, it's doing a decent job, but there's still room for improvement.
 
-The requirements are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#github-repository), except for the required sections in the `README.md`.
+Mean Squared Error (MSE): This tells us, on average, how much our predictions differ from the actual values in the training data. Here, the average squared difference is around 68601152192.94, which is quite large but it's relative to the scale of the dependent variable.
 
-For this project, the `README.md` file should contain:
+Root Mean Squared Error (RMSE): This is just the square root of the MSE. It gives us an idea of the average amount our predictions are off by. Here, it's around 261918.22, which is the typical difference between our predicted values and the actual values in the training data.
 
-* Overview
-* Business and Data Understanding
-  * Explain your stakeholder audience here
-* **Modeling**
-* **Regression Results**
-* Conclusion
+Test Set:
 
-Just like in Phase 1, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
+R-squared: Similar to the training set, this tells us how well our model explains the variation in the test data. An R-squared value of 0.48 means that about 48% of the variability in the dependent variable is explained by our model when evaluated on the test data.
 
-## Grading
+Mean Squared Error (MSE): This is the average squared difference between our predictions and the actual values in the test data. It's around 68845100756.11, similar to the MSE in the training set.
 
-***To pass this project, you must pass each project rubric objective.*** The project rubric objectives for Phase 2 are:
+Root Mean Squared Error (RMSE): Again, this is just the square root of the MSE for the test data. It's around 262383.50, which is the typical difference between our predicted values and the actual values in the test data
+Overall
+, the model suggests that there is a positive relationship between the independent and dependent variables. However, given the moderate R-squared value and the relatively high MSE and RMSE, it's clear that there may be other factors influencing the dependent variable that are not captured by the model. Further investigation or refinement of the model may be needed to improve its predictive performance.
+# ** Multiple Linear Regresion 
+![alt text](image-1.png)
+# **RESIDUALS**
+![alt text](image-3.png)
+A p-value of 3.975373048166964e-258, which is extremely close to zero, indicates strong evidence against the null hypothesis of homoscedasticity. In other words, there is a significant presence of heteroscedasticity in your data.
 
-1. Attention to Detail
-2. Statistical Communication
-3. Data Preparation Fundamentals
-4. Linear Modeling
+Heteroscedasticity refers to the situation where the variability of a variable is unequal across the range of values of a second variable that predicts it. In the context of regression analysis, it means that the variance of the errors is not constant across observations.
+The model identifies the main factors that affect house prices, giving useful advice to real estate companies when they help customers. It's not perfect, but it does an okay job with a 63.1% score. We still need to check if it can predict prices well. However, the model does its job by helping with decisions and making marketing better by using details about houses and the market.
 
-### Attention to Detail
+We can see the positive correlation between the house prices and all other features except the year built which indicates a negative correlation.
+#**Log transformation**.
+Transforming the dependent variable or one or more independent variables can sometimes stabilize the variance. Common transformations include taking the natural logarithm, square root, or reciprocal of the variables.
 
-Just like in Phase 1, this rubric objective is based on your completion of checklist items. ***In Phase 2, you need to complete 70% (7 out of 10) or more of the checklist elements in order to pass the Attention to Detail objective.***
+Log transformation of the multiple linear regression.
+![alt text](image-4.png)
 
-**NOTE THAT THE PASSING BAR IS HIGHER IN PHASE 2 THAN IT WAS IN PHASE 1!**
+![alt text](image-5.png)
+The model's residuals are randomly distributed, indicating no systematic bias. The log transformation visualizes residuals and patterns. A horizontal red line suggests linearity and normality are satisfied, but does not provide a definitive answer on model goodness fit and additional technique's could be used to assess the model.
+visualization of the positive and negative coefficient variables.
+R-squared: The R-squared value indicates that approximately 71.61% of the variance in the target variable (price) is explained by the model.
 
-The standard will increase with each Phase, until you will be required to complete all elements to pass Phase 5 (Capstone).
+MSE (Mean Squared Error): The MSE of approximately 37,774,083,176.84 represents the average squared difference between the predicted and actual house prices.
 
-#### Exceeds Objective
+Coefficients: The coefficients represent the estimated effect of each predictor variable on the target variable. For example: The coefficient for const (intercept) is 4987.94. The coefficient for x1 (bathrooms) is 3457.38. The coefficient for x2 (sqft_living) is -16.53. The coefficient for x3 (floors) is -16.98. The coefficient for x4 (waterfront) is -59.75. The coefficient for x5 (condition) is -66.70. The coefficient for x6 (grade) is 21.71. The coefficient for x7 (sqft_basement) is 56.12. The coefficient for x8 (yr_built) and other coefficients follow.
 
-80% or more of the project checklist items are complete
+P-values: P-values indicate the statistical significance of the coefficients. A small p-value (typically < 0.05) suggests that the corresponding predictor variable is statistically significant in predicting the target variable. In this summary, some coefficients have p-values less than 0.05, indicating statistical significance, while others do not.
 
-#### Meets Objective (Passing Bar)
+F-statistic: The F-statistic tests the overall significance of the model. A low p-value (typically < 0.05) suggests that at least one of the predictors has a non-zero coefficient, indicating that the model as a whole is statistically significant.
 
-70% of the project checklist items are complete
+Overall, the summary provides valuable insights into the relationships between the predictor variables and the target variable, as well as the overall goodness-of-fit of the model.
 
-#### Approaching Objective
+![alt text](image-6.png)
+#**REGRESSION Results**
 
-60% of the project checklist items are complete
+From all the models observed,We can see the positive correlation between the house prices and all other features except the year built which indicates a negative correlation.
 
-#### Does Not Meet Objective
+Polynomial Regression is the preferred model beacuse from the evaluation it has the highest R-squared value of 0.73
 
-50% or fewer of the project checklist items are complete
+The features below impact price such that an increase will cause an increase in the price of the property. 'bedrooms','bathrooms', 'sqft_living','floors', 'waterfront','view''condition', 'grade', 'sqft_above','sqft_basement', 'yr_renovated', 'sqft_living15','renovated', 'basement'
+# **Assumptions**
+Linearity: The relationship between the independent variables (predictors) and the dependent variable (response) is linear. This means that a change in the independent variable corresponds to a proportional change in the dependent variable.
 
-### Statistical Communication
+Independence of errors: The errors (residuals) from the regression model should be independent of each other. In other words, the residual for one observation should not predict the residual for another observation.
 
-Recall that communication is one of the key data science "soft skills". In Phase 2, we are specifically focused on Statistical Communication. We define Statistical Communication as:
+Normality of errors: The errors are normally distributed. This implies that the residuals should follow a normal distribution with a mean of zero.
 
-> Communicating **results of statistical analyses** to diverse audiences via writing and live presentation
+No perfect multicollinearity: There should be no perfect linear relationship between the independent variables. In other words, no independent variable should be a perfect linear combination of other independent variables.
+#**Limitations**
+Despite its effectiveness in predicting property prices, the model has several limitations that need to be addressed:
 
-Note that this is the same as in Phase 1, except we are replacing "basic data analysis" with "statistical analyses".
+Limited Property Characteristics: The dataset may lack comprehensive property-based characteristics, potentially limiting the model's ability to capture the full range of factors influencing housing prices.
 
-High-quality Statistical Communication includes rationale, results, limitations, and recommendations:
+Multicollinearity Concerns: The presence of correlated predictors, such as square footage and number of bedrooms, can introduce multicollinearity issues. This makes it difficult to discern the individual impact of each feature accurately, potentially affecting the model's reliability.
 
-* **Rationale:** Explaining why you are using statistical analyses rather than basic data analysis
-  * For example, why are you using regression coefficients rather than just a graph?
-  * What about the problem or data is suitable for this form of analysis?
-  * For a data science audience, this includes your reasoning for the changes you applied while iterating between models.
-* **Results:** Describing the overall model metrics and feature coefficients
-  * You need at least one overall model metric (e.g. r-squared or RMSE) and at least two feature coefficients.
-  * For a business audience, make sure you connect any metrics to real-world implications. You do not need to get into the details of how linear regression works.
-  * For a data science audience, you don't need to explain what a metric is, but make sure you explain why you chose that particular one.
-* **Limitations:** Identifying the limitations and/or uncertainty present in your analysis
-  * This could include p-values/alpha values, confidence intervals, assumptions of linear regression, missing data, etc.
-  * In general, this should be more in-depth for a data science audience and more surface-level for a business audience.
-* **Recommendations:** Interpreting the model results and limitations in the context of the business problem
-  * What should stakeholders _do_ with this information?
+Assumption Violations: Polynomial regression relies on the assumption of linearity between predictors and the target variable. However, in reality, this assumption may not always hold true, leading to biased estimates and less dependable predictions.Also heteroscedasticity was present.
 
-#### Exceeds Objective
+Overfitting Risk: Polynomial regression models, especially those with high degrees, are prone to overfitting. This occurs when the model fits the training data too closely, capturing noise rather than underlying patterns. As a result, the model may struggle to generalize well to unseen data, impacting its predictive performance.
 
-Communicates the rationale, results, limitations, and specific recommendations of statistical analyses
+**Limitations**
+1.   The dataset could have more property based characteristics
+2.   Multicollinearity:The presence of correlated predictors (e.g., square footage and number of bedrooms) can lead to multicollinearity issues, making it challenging to interpret the individual effects of each feature accurately
 
-> See above for extended explanations of these terms.
+1. Assumption Violations:Polynomial regression assumes linearity between predictors and the target variable, which may not hold true in all cases. Violations of this assumption can lead to biased estimates and unreliable predictions.
+1. Overfitting: Polynomial regression models, particularly those with high degrees, are susceptible to overfitting, where the model fits the training data too closely and may not generalize well to unseen data.
+Overall the model was the best fit model for this predictions
 
-#### Meets Objective (Passing Bar)
+# **RECOMENDATIONS**
 
-Successfully communicates the results of statistical analyses without any major errors
+1.Invest in Larger Properties: Investors seeking maximum returns should focus on larger houses, as there's a positive correlation between total square footage and price. Such properties have the potential for higher profits upon resale or rental.
 
-> The minimum requirement is to communicate the _results_, meaning at least one overall model metric (e.g. r-squared or RMSE) as well as at least two feature coefficients. See the Approaching Objective section for an explanation of what a "major error" means.
 
-#### Approaching Objective
+2.Upgrade Existing Properties: Homeowners can increase their property's value by investing in upgrades that increase square footage, such as adding extra rooms or expanding living spaces.
 
-Communicates the results of statistical analyses with at least one major error
 
-> A major error means that some aspect of your explanation is fundamentally incorrect. For example, if a feature coefficient is negative and you say that an increase in that feature results in an increase of the target, that would be a major error. Another example would be if you say that the feature with the highest coefficient is the "most statistically significant" while ignoring the p-value. One more example would be reporting a coefficient that is not statistically significant, rather than saying "no statistically significant linear relationship was found"
+3.Optimize Bedroom and Bathroom Ratios: It's essential to find the right balance between bedrooms and bathrooms to maximize property value. Consulting with real estate professionals can help determine the optimal ratio based on market trends and buyer preferences.
 
-> "**If a coefficient's t-statistic is not significant, don't interpret it at all.** You can't be sure that the value of the corresponding parameter in the underlying regression model isn't really zero." _DeVeaux, Velleman, and Bock (2012), Stats: Data and Models, 3rd edition, pg. 801_. Check out [this website](https://web.ma.utexas.edu/users/mks/statmistakes/TOC.html) for extensive additional examples of mistakes using statistics.
 
-> The easiest way to avoid making a major error is to have someone double-check your work. Reach out to peers on Slack and ask them to confirm whether your interpretation makes sense!
+4.Focus on Quality Over Quantity: Prioritize quality improvements that enhance functionality and aesthetics, such as renovating bathrooms with modern fixtures or upgrading kitchen appliances, to add perceived value to the property.
 
-#### Does Not Meet Objective
 
-Does not communicate the results of statistical analyses
+5.Highlight Features in Listings: Emphasize the number of bedrooms and bathrooms in property listings to attract buyers who prioritize space and convenience. Highlight unique features that add versatility to the property.
 
-> It is not sufficient to just display the entire results summary. You need to pull out at least one overall model metric (e.g. r-squared, RMSE) and at least two feature coefficients, and explain what those numbers mean.
 
-### Data Preparation Fundamentals
+6.Differentiate Marketing Strategies: Tailor marketing strategies based on property condition and grade ratings. Highlight the benefits of higher-grade properties to attract premium buyers, while emphasizing renovation potential for properties with lower condition ratings.
+# ** Conclusion**
 
-We define this objective as:
+Property Size Matters: There is a clear positive correlation between the size of a property, indicated by total square footage, and its price. Investing in larger properties can potentially yield higher returns for investors and increase market value for homeowners.
 
-> Applying appropriate **preprocessing** and feature engineering steps to tabular data in preparation for statistical modeling
 
-The two most important components of preprocessing for the Phase 2 project are:
+Strategic Upgrades Add Value: Upgrading existing properties with strategic renovations and expansions, particularly those that increase square footage, can enhance their market value. Quality improvements that improve functionality and aesthetics are key to maximizing property value.
 
-* **Handling Missing Values:** Missing values may be present in the features you want to use, either encoded as `NaN` or as some other value such as `"?"`. Before you can build a linear regression model, make sure you identify and address any missing values using techniques such as dropping or replacing data.
-* **Handling Non-Numeric Data:** A linear regression model needs all of the features to be numeric, not categorical. For this project, ***be sure to pick at least one non-numeric feature and try including it in a model.*** You can identify that a feature is currently non-numeric if the type is `object` when you run `.info()` on your dataframe. Once you have identified the non-numeric features, address them using techniques such as ordinal or one-hot (dummy) encoding.
 
-There is no single correct way to handle either of these situations! Use your best judgement to decide what to do, and be sure to explain your rationale in the Markdown of your notebook.
+Balance is Key: While adding extra bedrooms and bathrooms can increase a property's price, there's a point of diminishing returns. It's important to strike a balance between quantity and quality, optimizing the bedroom-to-bathroom ratio to align with market trends and buyer preferences.
 
-Feature engineering is encouraged but not required for this project.
 
-#### Exceeds Objective
-
-Goes above and beyond with data preparation, such as feature engineering or merging in outside datasets
-
-> One example of feature engineering could be using the `date` feature to create a new feature called `season`, which represents whether the home was sold in Spring, Summer, Fall, or Winter.
-
-> One example of merging in outside datasets could be finding data based on ZIP Code, such as household income or walkability, and joining that data with the provided CSV.
-
-#### Meets Objective (Passing Bar)
-
-Successfully prepares data for modeling, including converting at least one non-numeric feature into ordinal or binary data and handling missing data as needed
-
-> As a reminder, you can identify the non-numeric features by calling `.info()` on the dataframe and looking for type `object`.
-
-> Your final model does not necessarily need to include any features that were originally non-numeric, but you need to demonstrate your ability to handle this type of data.
-
-#### Approaching Objective
-
-Prepares some data successfully, but is unable to utilize non-numeric data
-
-> If you simply subset the dataframe to only columns with type `int64` or `float64`, your model will run, but you will not pass this objective.
-
-#### Does Not Meet Objective
-
-Does not prepare data for modeling
-
-### Linear Modeling
-
-According to [Kaggle's 2020 State of Data Science and Machine Learning Survey](https://www.kaggle.com/kaggle-survey-2020), linear and logistic regression are the most popular machine learning algorithms, used by 83.7% of data scientists. They are small, fast models compared to some of the models you will learn later, but have limitations in the kinds of relationships they are able to learn.
-
-In this project you are required to use linear regression as the primary statistical analysis, although you are free to use additional statistical techniques as appropriate.
-
-#### Exceeds Objective
-
-Goes above and beyond in the modeling process, such as recursive feature selection
-
-#### Meets Objective (Passing Bar)
-
-Successfully builds a baseline model as well as at least one iterated model, and correctly extracts insights from a final model without any major errors
-
-> We are looking for you to (1) create a baseline model, (2) iterate on that model, making adjustments that are supported by regression theory or by descriptive analysis of the data, and (3) select a final model and report on its metrics and coefficients
-
-> Ideally you would include written justifications for each model iteration, but at minimum the iterations must be _justifiable_
-
-> For an explanation of "major errors", see the description below
-
-#### Approaching Objective
-
-Builds multiple models with at least one major error
-
-> The number one major error to avoid is including the target as one of your features. For example, if the target is `price` you should NOT make a "price per square foot" feature, because that feature would not be available if you didn't already know the price.
-
-> Other examples of major errors include: using a target other than `price`, attempting only simple linear regression (not multiple linear regression), dropping multiple one-hot encoded columns without explaining the resulting baseline, or using a unique identifier (`id` in this dataset) as a feature.
-
-#### Does Not Meet Objective
-
-Does not build multiple linear regression models
-
-## Getting Started
-
-Please start by reviewing the contents of this project description. If you have any questions, please ask your instructor ASAP.
-
-Next, you will need to complete the [***Project Proposal***](#project_proposal) which must be reviewed by your instructor before you can continue with the project.
-
-Here are some suggestions for creating your GitHub repository:
-
-1. Fork the [Phase 2 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-2-project-v2-3), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-2. Or, create a new repository from scratch by going to [github.com/new](https://github.com/new) and copying the data files from the Phase 2 Project Repository into your new repository.
-   - Recall that you can refer to the [Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template) as an example structure
-   - This option will result in the most professional-looking portfolio repository, but can be more complicated to use. So if you are getting stuck with this option, try forking the project repository instead
-
-## Summary
-
-This is your first modeling project! Take what you have learned in Phase 2 to create a project with a more sophisticated analysis than you completed in Phase 1. You will build on these skills as we move into the predictive machine learning mindset in Phase 3. You've got this!
+Marketing Differentiation is Essential: Tailoring marketing strategies based on property condition and grade ratings is crucial. Highlighting the unique features and benefits of higher-grade properties can attract premium buyers, while emphasizing renovation potential for properties with lower ratings can appeal to savvy investors.
